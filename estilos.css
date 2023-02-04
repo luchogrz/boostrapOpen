@@ -1,0 +1,428 @@
+
+body {
+    background-image: url("images/fondo.png");
+}
+
+
+.glass {
+
+    
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+}
+
+
+
+.navbar {
+     position: sticky;    
+     /* position: relative; */
+    top: 0;
+    padding: 2rem;
+    /* background-color: rgb(211, 211, 243); */
+    background-image: linear-gradient(to top, #d3d3f3, #c5c5f2, #b7b7f0, #a9a9ee, #9b9bec);
+    height: 100px;
+   z-index: 1000;
+}
+
+ 
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+} 
+
+html {
+	box-sizing: border-box;
+   	scroll-behavior: smooth;
+}
+
+/*----------------------------------ESTILOS GENERALES*/
+
+   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 211, 243);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: monospace;
+}
+
+h1 span {
+    color: red;
+}
+
+h1:hover {
+    font-size : 3rem;
+    transition: 2s;
+}
+
+.seccion-oscura {
+    background-color: #1b1b32;
+    color: white;
+    
+}
+
+.seccion-clara {
+
+    color: black;
+    background-color: white;
+
+}
+
+.seccion-titulo {
+    font-size: 2.5rem;
+    font-family: monospace;
+    padding: 15px 0px;
+
+}
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    text-decoration: none;
+}
+/* -------------------------------------Seccion HERO */
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #a53131;
+    font-family: monospace;
+}
+
+
+.hero {
+
+    min-height: 450px;
+    text-align: center;
+
+}
+
+
+
+/* --------------------------------------Sobre mi */
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+    background-image: url("images/fondo.png");
+    /* background-image: url(images/fondo2.png); */
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+  
+  
+    
+}
+
+
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+    height: 350px;
+    width: 240px;
+    border-radius: 15%;
+    margin: 20px;
+  
+}
+
+/* Experiencia */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+    background-color: rgb(211,211,243);
+    color: black;
+    font-weight: bold ;
+
+}
+
+.experiencia .columna {
+    border: 1px solid white;
+    padding: 50px;
+    transition: all 0.5s ease-in;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.experiencia .columna:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.experiencia-titulo {
+
+    font-size: 25px;
+    /* font-weight: bold; */
+    margin: 10px 0px;
+}
+
+
+.badges-contenedor {
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    font-weight: bold;
+    
+}
+
+.badge {
+    margin: 5px;
+}
+
+
+
+.experiencia i {
+    font-size: 2.5rem;
+    /* color: rgb(18, 194, 18); */
+    /* background-color: #1b1b32; */
+    /* border-radius: 50%; */
+    padding: 8px 20px;
+}
+
+/* iconos de experiencia*/
+
+
+
+button {
+    background-color: rgb(221, 236, 221);
+    border-radius: 20%;
+    margin-top: 100px;  
+}
+
+.btn-up {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/* proyectos */
+
+.proyectos-recientes {
+    padding: 40px;
+
+   
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease
+}
+
+.proyectos-contenedor {
+
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+}
+
+.overlay {
+    transition: all 0.2 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+  
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* Articulos */
+
+.articulos .card-header {
+    font-weight: bold;
+}
+
+.articulos {
+    min-height: 500px;
+    padding: 30px;
+    
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos a {
+
+    text-decoration: none;
+  
+
+}
+
+/* testimonios */
+
+.testimonios {
+    padding: 40px 40px 80px 40px ;
+}
+
+.testimonios .carrusel {
+    max-width: 800px;
+}
+
+.carousel-item{
+    height: 500px;
+        
+}
+
+.carousel-item .container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.testimonios-imagen {
+
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+
+margin-bottom: 0 ;
+}
+
+.testimonio-info .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* contacto */
+
+.btn-contacto {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: 0;
+}
+
+.parrafo-contacto {
+   font-size: 20px;
+}
+
+/* Adaptable (responsivo) */
+
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;   
+        
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .testimonios-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .hero-inferior-imagen {
+
+        max-width: 700px ;
+    }
+
+    
+}
